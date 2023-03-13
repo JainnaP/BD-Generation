@@ -54,5 +54,6 @@ CREATE TABLE tb_pizzas(
     SELECT * FROM tb_pizzas INNER JOIN tb_categorias ON tb_categorias.id = tb_pizzas.categoria_id;
 	SELECT * FROM tb_pizzas INNER JOIN tb_categorias ON tb_categorias.id = tb_pizzas.categoria_id WHERE tipo = "doce";
     SELECT * FROM tb_categorias;
+    SELECT * FROM tb_pizzas;
     
     
