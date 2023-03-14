@@ -55,6 +55,8 @@ CREATE TABLE tb_produtos(
     SELECT * FROM tb_categorias WHERE corte LIKE "%f%";
     SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_categorias.id = tb_produtos.categoria_id;
     SELECT * FROM tb_produtos INNER JOIN tb_categorias ON tb_categorias.id = tb_produtos.categoria_id WHERE tipo = "suina";
+    SELECT corte,tipo,marca,precoKG,quantidadeKG FROM tb_categorias INNER JOIN tb_produtos ON tb_categorias.id = tb_produtos.categoria_id;
+    
     
     SELECT * FROM tb_categorias;
     SELECT * FROM tb_produtos;
